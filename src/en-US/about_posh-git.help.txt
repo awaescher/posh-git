@@ -66,10 +66,10 @@ GIT STATUS SUMMARY
 
     * [ (BeforeText)
       * {HEAD-name} is the current branch, or the SHA of a detached HEAD
-        * Cyan means the branch matches its remote
+        * Blue means the branch matches its remote
         * Green means the branch is ahead of its remote (green light to push)
         * Red means the branch is behind its remote
-        * Yellow means the branch is both ahead of and behind its remote
+        * Cyan means the branch is both ahead of and behind its remote
 
       * S represents the branch status in relation to remote (tracked origin) branch
         * ≡      = Local branch is at the same commit level as the remote

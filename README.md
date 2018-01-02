@@ -159,10 +159,10 @@ By default, the status summary has the following format:
 
 * ` [` (`BeforeText`)
 * `{HEAD-name}` is the current branch, or the SHA of a detached HEAD
- * Cyan means the branch matches its remote
+ * Blue means the branch matches its remote
  * Green means the branch is ahead of its remote (green light to push)
  * Red means the branch is behind its remote
- * Yellow means the branch is both ahead of and behind its remote
+ * Cyan means the branch is both ahead of and behind its remote
 * S represents the branch status in relation to remote (tracked origin) branch. Note: This information reflects the state of the remote tracked branch after the last `git fetch/pull` of the remote.
   * ≡ = The local branch in at the same commit level as the remote branch (`BranchIdenticalStatus`)
   * ↑`<num>` = The local branch is ahead of the remote branch by the specified number of commits; a `git push` is required to update the remote branch (`BranchAheadStatus`)

@@ -5,15 +5,15 @@ $global:GitPromptSettings = [pscustomobject]@{
     DefaultForegroundColor                      = $null
 
     BeforeText                                  = ' ['
-    BeforeForegroundColor                       = [ConsoleColor]::Yellow
+    BeforeForegroundColor                       = [ConsoleColor]::Cyan
     BeforeBackgroundColor                       = $null
 
     DelimText                                   = ' |'
-    DelimForegroundColor                        = [ConsoleColor]::Yellow
+    DelimForegroundColor                        = [ConsoleColor]::Cyan
     DelimBackgroundColor                        = $null
 
     AfterText                                   = ']'
-    AfterForegroundColor                        = [ConsoleColor]::Yellow
+    AfterForegroundColor                        = [ConsoleColor]::Cyan
     AfterBackgroundColor                        = $null
 
     FileAddedText                               = '+'
@@ -32,19 +32,19 @@ $global:GitPromptSettings = [pscustomobject]@{
     LocalWorkingStatusBackgroundColor           = $null
 
     LocalStagedStatusSymbol                     = '~'
-    LocalStagedStatusForegroundColor            = [ConsoleColor]::Cyan
+    LocalStagedStatusForegroundColor            = [ConsoleColor]::Blue
     LocalStagedStatusBackgroundColor            = $null
 
     BranchUntrackedSymbol                       = $null
-    BranchForegroundColor                       = [ConsoleColor]::Cyan
+    BranchForegroundColor                       = [ConsoleColor]::Blue
     BranchBackgroundColor                       = $null
 
     BranchGoneStatusSymbol                      = [char]0x00D7 # × Multiplication sign
-    BranchGoneStatusForegroundColor             = [ConsoleColor]::DarkCyan
+    BranchGoneStatusForegroundColor             = [ConsoleColor]::DarkBlue
     BranchGoneStatusBackgroundColor             = $null
 
     BranchIdenticalStatusToSymbol               = [char]0x2261 # ≡ Three horizontal lines
-    BranchIdenticalStatusToForegroundColor      = [ConsoleColor]::Cyan
+    BranchIdenticalStatusToForegroundColor      = [ConsoleColor]::Blue
     BranchIdenticalStatusToBackgroundColor      = $null
 
     BranchAheadStatusSymbol                     = [char]0x2191 # ↑ Up arrow
@@ -56,7 +56,7 @@ $global:GitPromptSettings = [pscustomobject]@{
     BranchBehindStatusBackgroundColor           = $null
 
     BranchBehindAndAheadStatusSymbol            = [char]0x2195 # ↕ Up & Down arrow
-    BranchBehindAndAheadStatusForegroundColor   = [ConsoleColor]::Yellow
+    BranchBehindAndAheadStatusForegroundColor   = [ConsoleColor]::Cyan
     BranchBehindAndAheadStatusBackgroundColor   = $null
 
     BeforeIndexText                             = ""
@@ -304,8 +304,8 @@ if(!(Test-Path Variable:Global:VcsPromptStatuses)) {
 }
 $s = $global:GitPromptSettings
 
-# Override some of the normal colors if the background color is set to the default DarkMagenta.
-if ($Host.UI.RawUI.BackgroundColor -eq [ConsoleColor]::DarkMagenta) {
+# Override some of the normal colors if the background color is set to the default DarkCyan.
+if ($Host.UI.RawUI.BackgroundColor -eq [ConsoleColor]::DarkCyan) {
     $s.LocalDefaultStatusForegroundColor    = $s.LocalDefaultStatusForegroundBrightColor
     $s.LocalWorkingStatusForegroundColor    = $s.LocalWorkingStatusForegroundBrightColor
 
