@@ -4,7 +4,7 @@ This is a customized fork of the great powershell extension [posh-git](https://g
 ![Screenshot](https://github.com/awaescher/PoshX/blob/master/PoshX-small.png)
 
 # Note
-I am not the creator of the extension itself, this repository was forked from [posh-git](https://github.com/dahlbyk/posh-git), renamed to match the name of [PoshX](https://github.com/awaescher/poshx). The purpose of this repository is to customize the colors to match the look of [PoshX](https://github.com/awaescher/poshx).
+I am not the creator of the extension itself, this repository was forked from [posh-git](https://github.com/dahlbyk/posh-git), renamed to match the name of [PoshX](https://github.com/awaescher/poshx) and slightly modified to customize the colors to match the look of [PoshX](https://github.com/awaescher/poshx).
 
 ## Installation
 1. Head over to the PowerShell profile folder:
@@ -13,7 +13,7 @@ I am not the creator of the extension itself, this repository was forked from [p
     
     If there's **no profile** file yet, simply **create** the ps1-file into that folder named `Microsoft.PowerShell_profile.ps1`.
     
-    If there's **already a profile** file, **add** the following line to it:
+    If there's **already a profile** file, continue with the next step.
     
     
 
@@ -21,7 +21,7 @@ I am not the creator of the extension itself, this repository was forked from [p
 
     `Import-Module "{PATH-TO-REPO}\src\posh-git.psd1"`
 
-**poshx-git** will start with the next powershell window.
+**poshx-git** will load with new powershell windows.
 
 ## Uninstall
 Simply remove the inserted line again.
