@@ -11,7 +11,7 @@ I am not the creator of the extension itself, this repository was forked from [p
 
     default: `C:\Users\{USERNAME}\Documents\WindowsPowerShell`
     
-    If there's **no profile** file yet, simply **create** the ps1-file into that folder named `Microsoft.PowerShell_profile.ps1`.
+    If there's **no profile** file yet, simply **create** a ps1-file into that folder named `Microsoft.PowerShell_profile.ps1`.
     
     If there's **already a profile** file, continue with the next step.
     
